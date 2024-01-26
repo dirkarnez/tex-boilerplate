@@ -1,0 +1,10 @@
+# Ignore all
+*
+
+!*.tex
+!*.bib
+!README.md
+
+!*.pdf
+
+!.vscode/extensions.json
