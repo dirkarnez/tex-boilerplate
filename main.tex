@@ -5,6 +5,7 @@
 \usepackage{xurl}
 \usepackage{mathptmx}
 \usepackage{setspace}
+\usepackage{biblatex}
 
 \doublespacing
 
@@ -14,9 +15,43 @@
 \title{Adonis}
 \author{Nicholas Mamo \textsuperscript{1}}
 
+\addbibresource{cite.bib}
+
 \begin{document}
-	\maketitle
+
 	
+	\begin{titlepage}
+		\begin{center}
+			\vspace*{1cm}
+	
+			\textbf{Thesis Title}
+	
+			\vspace{0.5cm}
+			Thesis Subtitle
+				
+			\vspace{1.5cm}
+	
+			\textbf{Author Name}
+	
+			\vfill
+				
+			A thesis presented for the degree of\\
+			Doctor of Philosophy
+				
+			\vspace{0.8cm}
+		
+			% \includegraphics[width=0.4\textwidth]{university}
+				
+			Department Name\\
+			University Name\\
+			Country\\
+			Date
+				
+		\end{center}
+	\end{titlepage}
+
+	\tableofcontents
+
 	\section{Introduction}
 		The best way to appreciate a good template is to force yourself to write with a bad template. 
     This is the \textit{Adonis} template.
@@ -52,11 +87,13 @@
 		To make the template easier to use, \textit{Adonis} also comes with a separate file, \texttt{quickstart.tex}, without text, commented-out commands and space to write.
 		
 		I hope that you find this template to elevate both form and function, and that it proves it possible for the two to co-exist.
-		If you find any issues in \textit{Adonis}, or if you have suggestions to make it better, you can reach out to me at the email on the first page, or by opening an issue on the template's repository~\cite{repository}.
+		If you find any issues in \textit{Adonis}, or if you have suggestions to make it better, you can reach out to me at the email on the first page, or by opening an issue on the template's repository~\cite{einstein}.
     
-	\begin{thebibliography}{5}
-		\bibitem{repository}
-		Adonis template. Nicholas Mamo (2023). \url{https://github.com/NicholasMamo/adonis-template}
-	\end{thebibliography}
+	\section{References}
+	\printbibliography[heading=none]
+	% \begin{thebibliography}{5}
+	% 	\bibitem{repository}
+	% 	Adonis template. Nicholas Mamo (2023). \url{https://github.com/NicholasMamo/adonis-template}
+	% \end{thebibliography}
 	
 \end{document}
